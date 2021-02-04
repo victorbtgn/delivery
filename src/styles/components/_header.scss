@@ -1,0 +1,199 @@
+.header {
+  &-mobile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-bg;
+    padding: 20px;
+  }
+
+  &-desktop {
+    display: none;
+  }
+
+  &-logo__link {
+    font-size: 1em;
+    color: $primary-text-white;
+    transition: $primary-transition;
+
+    &:hover,
+    &:focus {
+      color: $primary-text-hover-white;
+      transition: $primary-transition;
+    }
+  }
+
+  &-nav {
+    &__btn {
+      padding: 20px 10px;
+      border-style: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+
+      &-icon {
+        width: 30px;
+        height: 3px;
+        background-color: $primary-text-white;
+        border-radius: 1.5px;
+        transition: $primary-transition;
+        transition: 0.2s linear;
+
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 3px;
+          background-color: $primary-text-white;
+          border-radius: 1.5px;
+          transition: $primary-transition;
+        }
+
+        &::before {
+          transform: translateY(-10px);
+        }
+
+        &::after {
+          transform: translateY(7px);
+        }
+      }
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__menuActive {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      min-height: calc(100vh - 63px);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: $primary-bg;
+    }
+
+    &__link {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}
+
+// click on the navigation menu on the mobile
+
+.menuButtonActive .header-nav__btn-icon {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menuButtonActive .header-nav__btn-icon::before {
+  transform: rotate(45deg) translate(37px, -35px);
+}
+
+.menuButtonActive .header-nav__btn-icon::after {
+  transform: rotate(-45deg) translate(37px, 35px);
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    &-mobile {
+      display: none;
+    }
+
+    &-desktop {
+      display: block;
+    }
+
+    &-logo {
+      margin-bottom: 0.2em;
+
+      &__link {
+        font-size: 1, 5em;
+        color: $primary-title-desktop;
+        transition: $primary-transition;
+
+        &:hover,
+        &:focus {
+          color: $primary-title-desktop-hover;
+          transition: $primary-transition;
+        }
+      }
+    }
+
+    &-contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
+
+    &-phone {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        position: relative;
+        margin-bottom: 0.2em;
+        font-size: 1.2em;
+
+        &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          left: -2em;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: $primary-bg;
+        }
+      }
+    }
+
+    &-social {
+      text-align: center;
+      &__title {
+        margin-bottom: 0.5em;
+      }
+      &__link {
+        &:not(:last-child) {
+          margin-right: 0.5em;
+        }
+      }
+    }
+
+    &-nav {
+      display: flex;
+      flex-basis: auto;
+      background-color: $primary-bg;
+
+      &__link {
+        font-size: 1.2em;
+        font-weight: 500;
+        color: $primary-text-white;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        transition: $primary-transition;
+
+        &:not(:last-child) {
+          border-right: 1px solid $primary-text-white;
+        }
+
+        &:hover,
+        &:focus {
+          color: $primary-title-desktop;
+          background-color: $primary-text-hover-white;
+          border-top: 1px solid $primary-title-desktop;
+          border-bottom: 1px solid $primary-title-desktop;
+          transition: $primary-transition;
+        }
+      }
+    }
+  }
+}
