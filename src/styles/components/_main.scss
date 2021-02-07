@@ -1,7 +1,208 @@
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: $primary-bg;
 
-  &-title {
-    text-align: center;
+  &-phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+
+    &__title {
+      margin-bottom: 1em;
+      color: $primary-text-white;
+    }
+
+    &__item {
+      position: relative;
+      padding-left: 1em;
+      margin-bottom: 0.2em;
+      font-size: 1.2em;
+      font-weight: 500;
+      color: $primary-text-white;
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: -1em;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $primary-text-white;
+      }
+    }
+  }
+
+  &-callback {
+    width: 80%;
+    max-width: 30em;
+    height: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    outline: none;
+    transition: $primary-transition;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      border: 1px solid $primary-text-white;
+      transition: $primary-transition;
+    }
+  }
+
+  &-description {
+    max-width: 90%;
+    margin-bottom: 2em;
+    font-size: 2em;
+    font-weight: 500;
+    color: $primary-text-white;
+  }
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-modal-overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__modal {
+      width: 90%;
+      max-width: 500px;
+      height: 90%;
+      max-height: 300px;
+      background-color: $primary-bg;
+      padding: 0 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &-closeBtn {
+        width: 100%;
+        background: transparent;
+        border-style: none;
+        display: flex;
+        justify-content: flex-end;
+        outline: none;
+
+        &-btn {
+          position: relative;
+          width: 30px;
+          height: 3px;
+          padding: 20px 10px 20px 0;
+          transition: $primary-transition;
+
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 3px;
+            border-radius: 1.5px;
+            background-color: $primary-text-white;
+            transition: $primary-transition;
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      &-title {
+        color: $primary-text-white;
+        margin-bottom: 0.5em;
+      }
+
+      &-input,
+      &-textarea {
+        width: 70%;
+        min-width: 300px;
+        min-height: 30px;
+        margin-bottom: 0.5em;
+        padding: 0 0.5em;
+        border-style: none;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      &-textarea {
+        min-height: 50px;
+        padding-top: 0.5em;
+        resize: none;
+        margin-bottom: 0.5em;
+      }
+
+      &-submit {
+        width: 200px;
+        height: 30px;
+        border-style: none;
+        border-radius: 5px;
+        transition: $primary-transition;
+        outline: none;
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          border: 1px solid $primary-text-white;
+          transition: $primary-transition;
+        }
+      }
+    }
+  }
+}
+
+.splide {
+  width: 90%;
+  margin-bottom: 3em;
+
+  &__arrow--prev,
+  &__arrow--next {
+    width: 3em;
+    height: 3em;
+    background-color: $primary-text-white;
+    fill: $primary-title-desktop;
+  }
+
+  &__slide-item {
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main {
+    min-height: 500px;
+    justify-content: space-around;
+
+    &-description {
+      // margin-bottom: 4em;
+      margin-bottom: 0;
+    }
+
+    &-callback {
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,16 +1,10 @@
 .header {
-  &-mobile {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $primary-bg;
-    padding: 20px;
-  }
-
-  &-desktop {
-    display: none;
-  }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-bg;
+  padding: 20px;
 
   &-logo__link {
     font-size: 1em;
@@ -76,6 +70,7 @@
       justify-content: flex-start;
       align-items: center;
       background-color: $primary-bg;
+      z-index: 1;
     }
 
     &__link {
@@ -103,14 +98,6 @@
 
 @media screen and (min-width: 769px) {
   .header {
-    &-mobile {
-      display: none;
-    }
-
-    &-desktop {
-      display: block;
-    }
-
     &-logo {
       margin-bottom: 0.2em;
 

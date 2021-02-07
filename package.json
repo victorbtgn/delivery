@@ -45,7 +45,9 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "core-js": "^3.6.4",
-    "handlebars": "^4.7.3"
+    "handlebars": "^4.7.3",
+    "toaster-js": "^2.2.3"
   }
 }

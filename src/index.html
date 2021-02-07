@@ -8,26 +8,28 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-mobile">
-        <h1 class="header-logo">
-          <a href="#" class="header-logo__link">аля Логотип</a>
-        </h1>
-        <div class="header-nav">
-          <button class="header-nav__btn">
-            <div id="menuButton" class="header-nav__btn-icon"></div>
-          </button>
-          <div class="header-nav__menu">
-            <a href="#" class="header-nav__link">Головна</a>
-            <a href="#" class="header-nav__link">Посилання 1</a>
-            <a href="#" class="header-nav__link">Посилання 2</a>
-            <a href="#" class="header-nav__link">Посилання 3</a>
-            <a href="#" class="header-nav__link">Посилання 4</a>
+    <header>
+      <div class="mobile">
+        <div class="header">
+          <h1 class="header-logo">
+            <a href="#" class="header-logo__link">аля Логотип</a>
+          </h1>
+          <div class="header-nav">
+            <button class="header-nav__btn">
+              <div id="menuButton" class="header-nav__btn-icon"></div>
+            </button>
+            <div class="header-nav__menu">
+              <a href="#" class="header-nav__link">Головна</a>
+              <a href="#" class="header-nav__link">Посилання 1</a>
+              <a href="#" class="header-nav__link">Посилання 2</a>
+              <a href="#" class="header-nav__link">Посилання 3</a>
+              <a href="#" class="header-nav__link">Посилання 4</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="header-desktop">
+      <div class="desktop">
         <div class="header-contacts">
           <h1 class="header-logo">
             <a href="#" class="header-logo__link">аля Логотип</a>
@@ -53,11 +55,108 @@
       </div>
     </header>
 
-    <!-- <main class="main">
-      <h2 class="main-title">Телефони:</h2>
-      <a href="tel:+380" class="main-phone">(012) 34 56 789</a>
-      <a href="tel:+380" class="main-phone">(012) 34 56 789</a>
-      <a href="tel:+380" class="main-phone">(012) 34 56 789</a>
-    </main> -->
+    <main>
+      <div class="mobile">
+        <div class="main">
+          <div class="main-phones">
+            <h2 class="main-phones__title">Телефони:</h2>
+
+            <a href="tel:+380" class="main-phones__item">(012) 34 56 789</a>
+            <a href="tel:+380" class="main-phones__item">(012) 34 56 789</a>
+            <a href="tel:+380" class="main-phones__item">(012) 34 56 789</a>
+          </div>
+
+          <button id="callbackMobile" type="button" class="main-callback">
+            Замовити послугу
+          </button>
+
+          <p class="main-description">
+            Перевезення вантажів по Білій&#160;Церкві
+          </p>
+
+          <div id="splide" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 01</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 02</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 03</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 04</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 05</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 06</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 07</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 08</span></div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__slide-item"><span>Slide 0</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop">
+        <div class="main">
+          <p class="main-description">
+            Перевезення вантажів по Білій&#160;Церкві
+          </p>
+          <button id="callbackDesktop" type="button" class="main-callback">
+            Замовити послугу
+          </button>
+        </div>
+      </div>
+      <div id="callback" class="none">
+        <form class="main-overlay__modal">
+          <button type="button" class="main-overlay__modal-closeBtn">
+            <div class="main-overlay__modal-closeBtn-btn"></div>
+          </button>
+          <h2 class="main-overlay__modal-title">
+            Залиште заявку і ми передзвонимо Вам найближчим часом
+          </h2>
+          <input
+            id="callbackName"
+            type="text"
+            name="name"
+            class="main-overlay__modal-input"
+            placeholder="Ваше Ім'я"
+            autocomplete="off"
+            required
+          />
+          <input
+            id="callbackPhone"
+            type="tel"
+            name="phone"
+            class="main-overlay__modal-input"
+            placeholder="Номер телефону"
+            autocomplete="off"
+            required
+          />
+          <textarea
+            id="callbackMsg"
+            type="text"
+            name="comment"
+            class="main-overlay__modal-textarea"
+            placeholder="Опишіть Ваше замовлення"
+          ></textarea>
+          <button type="submit" class="main-overlay__modal-submit" disabled>
+            Відправити
+          </button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

@@ -1,6 +1,7 @@
 @import './base';
 
 @import './helpers/variables';
+@import '../../node_modules/@splidejs/splide/dist/css/splide.min.css';
 
 @import './components/header';
 @import './components/main';

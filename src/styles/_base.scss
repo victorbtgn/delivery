@@ -21,3 +21,28 @@ body {
 a {
   text-decoration: none;
 }
+
+.desktop {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+::-moz-scrollbar {
+  width: 0px;
+}
+
+@media screen and (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
