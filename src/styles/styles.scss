@@ -1,7 +1,9 @@
 @import './base';
 
 @import './helpers/variables';
+@import './helpers/placeholders';
 @import '../../node_modules/@splidejs/splide/dist/css/splide.min.css';
 
 @import './components/header';
 @import './components/main';
+@import './components/footer.scss';

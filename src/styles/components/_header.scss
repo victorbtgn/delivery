@@ -7,15 +7,7 @@
   padding: 20px;
 
   &-logo__link {
-    font-size: 1em;
-    color: $primary-text-white;
-    transition: $primary-transition;
-
-    &:hover,
-    &:focus {
-      color: $primary-text-hover-white;
-      transition: $primary-transition;
-    }
+    @extend %logo-set;
   }
 
   &-nav {
@@ -70,7 +62,7 @@
       justify-content: flex-start;
       align-items: center;
       background-color: $primary-bg;
-      z-index: 1;
+      z-index: 2;
     }
 
     &__link {
@@ -78,6 +70,10 @@
       padding: 10px 0;
       text-align: center;
     }
+  }
+
+  &-social {
+    @extend %social-cox-set;
   }
 }
 
@@ -121,7 +117,7 @@
       padding: 1em;
     }
 
-    &-phone {
+    &-phones {
       display: flex;
       flex-direction: column;
 
@@ -139,18 +135,6 @@
           height: 25px;
           border-radius: 50%;
           background-color: $primary-bg;
-        }
-      }
-    }
-
-    &-social {
-      text-align: center;
-      &__title {
-        margin-bottom: 0.5em;
-      }
-      &__link {
-        &:not(:last-child) {
-          margin-right: 0.5em;
         }
       }
     }

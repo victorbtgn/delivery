@@ -1,0 +1,49 @@
+footer {
+  background-color: $primary-bg;
+}
+
+.footer {
+  width: 90%;
+  max-width: 1000px;
+  padding: 2em 0;
+  margin: 0 auto;
+
+  &-description {
+    text-align: center;
+    margin-bottom: 1em;
+
+    &__logo {
+      @extend %logo-set;
+      margin-bottom: 0.5em;
+    }
+
+    &__email,
+    &__location {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &-phones {
+    @extend %phone-set-mobile-position;
+
+    &__item {
+      @extend %phone-set-mobile-item;
+    }
+  }
+
+  &-social {
+    @extend %social-cox-set;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div {
+      margin-bottom: 0;
+    }
+  }
+}
