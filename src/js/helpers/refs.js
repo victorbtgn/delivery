@@ -1,5 +1,6 @@
 export default {
     bodyRef: document.querySelector('body'),
+    navBoxREf: document.querySelector('#nav-box'),
 
     menuButton: document.querySelector('.header-nav__btn'),
     navigation: document.querySelector('.header-nav__menu'),

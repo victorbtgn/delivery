@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <div class="mobile">
         <div class="header">
           <h1 class="header-logo">
@@ -19,11 +19,19 @@
               <span id="menuButton" class="header-nav__btn-icon"></span>
             </button>
             <div class="header-nav__menu">
-              <a href="#" class="header-nav__link">Головна</a>
-              <a href="#" class="header-nav__link">Посилання 1</a>
-              <a href="#" class="header-nav__link">Посилання 2</a>
-              <a href="#" class="header-nav__link">Посилання 3</a>
-              <a href="#" class="header-nav__link">Посилання 4</a>
+              <div id="nav-box">
+                <a href="#header" class="header-nav__link">Головна</a>
+                <a href="#section1" class="header-nav__link"
+                  >Посилання&#160;1</a
+                >
+                <a href="#section2" class="header-nav__link"
+                  >Посилання&#160;2</a
+                >
+                <a href="#section3" class="header-nav__link"
+                  >Посилання&#160;3</a
+                >
+                <a href="#footer" class="header-nav__link">Контакти</a>
+              </div>
 
               <div class="header-social">
                 <p class="header-social__title">Працюємо для Вас</p>
@@ -52,16 +60,16 @@
           </div>
         </div>
         <div class="header-nav">
-          <a href="#" class="header-nav__link">Головна</a>
-          <a href="#" class="header-nav__link">Посилання 1</a>
-          <a href="#" class="header-nav__link">Посилання 2</a>
-          <a href="#" class="header-nav__link">Посилання 3</a>
-          <a href="#" class="header-nav__link">Посилання 4</a>
+          <a href="#header" class="header-nav__link">Головна</a>
+          <a href="#section1" class="header-nav__link">Посилання&#160;1</a>
+          <a href="#section2" class="header-nav__link">Посилання&#160;2</a>
+          <a href="#section3" class="header-nav__link">Посилання&#160;3</a>
+          <a href="#footer" class="header-nav__link">Контакти</a>
         </div>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <div class="mobile">
         <div class="main">
           <div class="main-phones">
@@ -164,9 +172,44 @@
       </div>
     </main>
 
-    <section style="height: 200px"></section>
+    <section
+      id="section1"
+      style="
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <p style="text-align: center; font-size: 3em">section #1</p>
+    </section>
 
-    <footer>
+    <section
+      id="section2"
+      style="
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #9e6700;
+      "
+    >
+      <p style="text-align: center; font-size: 3em">section #2</p>
+    </section>
+
+    <section
+      id="section3"
+      style="
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <p style="text-align: center; font-size: 3em">section #3</p>
+    </section>
+
+    <footer id="footer">
       <div class="footer">
         <div class="footer-description">
           <h2><a href="#" class="footer-description__logo">аля Логотип</a></h2>

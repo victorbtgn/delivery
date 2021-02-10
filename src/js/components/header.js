@@ -1,10 +1,9 @@
 import refs from '../helpers/refs';
 
 refs.menuButton.addEventListener('click', handleChange);
+refs.navBoxREf.addEventListener('click', handleNavLink);
 
-function handleChange (evt) {
-    evt.preventDefault();
-
+function handleChange () {
     if(refs.menuButton.classList.contains('menuButtonActive')) {
         refs.menuButton.classList.remove('menuButtonActive');
 
@@ -20,4 +19,14 @@ function handleChange (evt) {
 
         refs.bodyRef.setAttribute('style', 'overflow: hidden');
     }
+};
+
+function handleNavLink(evt) {
+  
+  if(evt) {
+      const timerId = setTimeout(() => {
+        handleChange(evt);
+        clearTimeout(timerId);
+      } , 50);
+  }
 };
