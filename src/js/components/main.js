@@ -41,6 +41,7 @@ function onOpenModal(evt) {
     if(refs.modalCallback.classList.contains('none')) {
         refs.modalCallback.classList.remove('none');
         refs.modalCallback.classList.add('main-overlay');
+        refs.bodyRef.setAttribute('style', 'overflow: hidden');
     }
 };
 
@@ -73,6 +74,7 @@ function closeModal() {
     refs.modalCallback.classList.add('none');
     window.removeEventListener('keydown', onPressEsc);
     refs.callbackSubmitBtn.setAttribute('disabled', 'disabled');
+    refs.bodyRef.removeAttribute('style');
 
     user.name = '';
     user.phone = '';

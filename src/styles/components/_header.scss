@@ -19,6 +19,7 @@
       cursor: pointer;
 
       &-icon {
+        display: block;
         width: 30px;
         height: 3px;
         background-color: $primary-text-white;
@@ -52,7 +53,7 @@
     }
 
     &__menuActive {
-      position: absolute;
+      position: fixed;
       right: 0;
       width: 100%;
       min-height: calc(100vh - 63px);
