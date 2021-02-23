@@ -67,6 +67,26 @@
           <a href="#footer" class="header-nav__link">Контакти</a>
         </div>
       </div>
+
+      <!-- floating navigation menu -->
+      <div id="floatingNav" class="none">
+        <div id="floatingNavLinks" class="floatingNav-nav">
+          <a href="#header" class="floatingNav-navActive__link">Головна</a>
+          <a href="#section1" class="floatingNav-navActive__link"
+            >Посилання&#160;1</a
+          >
+          <a href="#section2" class="floatingNav-navActive__link"
+            >Посилання&#160;2</a
+          >
+          <a href="#section3" class="floatingNav-navActive__link"
+            >Посилання&#160;3</a
+          >
+          <a href="#footer" class="floatingNav-navActive__link">Контакти</a>
+        </div>
+        <div>
+          <button type="button" class="floatingNav-btn"></button>
+        </div>
+      </div>
     </header>
 
     <main id="main">
@@ -133,7 +153,7 @@
           </button>
         </div>
       </div>
-      <div id="callback" class="none">
+      <!-- <div id="callback" class="none">
         <form class="main-overlay__modal">
           <button type="button" class="main-overlay__modal-closeBtn">
             <span class="main-overlay__modal-closeBtn-btn"></span>
@@ -169,44 +189,202 @@
             Відправити
           </button>
         </form>
-      </div>
+      </div> -->
     </main>
 
-    <section
-      id="section1"
-      style="
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <p style="text-align: center; font-size: 3em">section #1</p>
+    <section id="section1" class="description">
+      <h3 class="description-title">Перевезення будь чого і будь коли</h3>
+      <div class="description-variants">
+        <div class="description-variants__item">
+          <div></div>
+          <p>Lorem ipsum</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        </div>
+
+        <div class="description-variants__item">
+          <div></div>
+          <p>Lorem ipsum</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        </div>
+
+        <div class="description-variants__item">
+          <div></div>
+          <p>Lorem ipsum</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        </div>
+        <div class="description-variants__item">
+          <div></div>
+          <p>Lorem ipsum</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        </div>
+
+        <div class="description-variants__item">
+          <div></div>
+          <p>Lorem ipsum</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        </div>
+
+        <div class="description-variants__item">
+          <div></div>
+          <p>Lorem ipsum</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+        </div>
+      </div>
     </section>
 
-    <section
-      id="section2"
-      style="
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #9e6700;
-      "
-    >
-      <p style="text-align: center; font-size: 3em">section #2</p>
+    <section id="section2" class="aboutUs">
+      <div class="img">
+        <div class="img-inner">
+          <p>фотка</p>
+        </div>
+      </div>
+      <div class="descr">
+        <h3 class="descr-title">Наші переваги</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
     </section>
 
-    <section
-      id="section3"
-      style="
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <p style="text-align: center; font-size: 3em">section #3</p>
+    <section id="section3" class="priceList">
+      <h3 class="priceList-title">Прайс лист на послуги</h3>
+      <ul class="priceList-list">
+        <li class="priceList-list__title">
+          <span>Автомобіль</span>
+          <span>Вартість_по_місту</span>
+          <span>Вартість_по_Україні</span>
+        </li>
+
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+        <li class="priceList-list__item">
+          <div class="priceList-list__item-img">Фота</div>
+          <h4 class="priceList-list__item-title">Назва_авто_і_опис</h4>
+          <div class="priceList-list__item-box">
+            <div>
+              <span class="mobile"> По_місту: </span>
+              <p class="priceList-list__item-price">200 грн/год</p>
+            </div>
+
+            <div>
+              <span class="mobile">По_Україні: </span>
+              <p class="priceList-list__item-price">8 грн/км</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <button
+        id="callbackPrice"
+        type="button"
+        class="main-callback callbackPriceBtn"
+      >
+        Замовити розрахунок вартості перевезення
+      </button>
     </section>
 
     <footer id="footer">
@@ -237,5 +415,43 @@
         </div>
       </div>
     </footer>
+
+    <div id="callback" class="none">
+      <form class="main-overlay__modal">
+        <button type="button" class="main-overlay__modal-closeBtn">
+          <span class="main-overlay__modal-closeBtn-btn"></span>
+        </button>
+        <h2 class="main-overlay__modal-title">
+          Залиште заявку і ми передзвонимо Вам найближчим часом
+        </h2>
+        <input
+          id="callbackName"
+          type="text"
+          name="name"
+          class="main-overlay__modal-input"
+          placeholder="Ваше Ім'я"
+          autocomplete="off"
+          required
+        />
+        <input
+          id="callbackPhone"
+          type="tel"
+          name="phone"
+          class="main-overlay__modal-input"
+          placeholder="Номер телефону"
+          autocomplete="off"
+          required
+        />
+        <textarea
+          id="callbackMsg"
+          name="comment"
+          class="main-overlay__modal-textarea"
+          placeholder="Опишіть Ваше замовлення"
+        ></textarea>
+        <button type="submit" class="main-overlay__modal-submit" disabled>
+          Відправити
+        </button>
+      </form>
+    </div>
   </body>
 </html>

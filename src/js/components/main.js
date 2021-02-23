@@ -134,3 +134,8 @@ function onBlur(evt) {
         new Toast("Введіть номер в форматі 0123456789", Toast.TYPE_WARNING, Toast.TIME_NORMAL);
     }
 }
+
+// for section 3
+
+refs.callbackPriceBtn.addEventListener('click', onOpenModal);
+

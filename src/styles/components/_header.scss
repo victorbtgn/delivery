@@ -94,6 +94,79 @@
   transform: rotate(-45deg) translate(37px, 35px);
 }
 
+.floatingNav {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: $primary-modal-overlay;
+  z-index: 3;
+
+  &-nav {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  &-navActive {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    margin-bottom: 1.5em;
+    text-align: right;
+
+    &__link {
+      color: $primary-text-white;
+      transition: $primary-transition;
+
+      &:hover,
+      &:focus {
+        color: $primary-text-hover-white;
+        transition: $primary-transition;
+      }
+    }
+  }
+
+  &-btn {
+    padding: 1em 0.5em;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $primary-text-white;
+      transition: $primary-transition;
+    }
+
+    &::before {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  &-btnActive::before {
+    transform: translate(7px, 2px) rotate(45deg);
+  }
+
+  &-btnActive::after {
+    transform: translateX(-7px) rotate(-45deg);
+  }
+}
+
 @media screen and (min-width: 769px) {
   .header {
     &-logo {

@@ -48,6 +48,7 @@
     "@splidejs/splide": "^2.4.21",
     "core-js": "^3.6.4",
     "handlebars": "^4.7.3",
+    "lodash.debounce": "^4.0.8",
     "toaster-js": "^2.2.3"
   }
 }
